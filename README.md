@@ -69,7 +69,7 @@ Performs **fundamental analysis**, evaluates **real-time market sentiment**, and
 
 Below is an example of the kind of clean, structured investment recommendation the Autonomous Financial Analyst Agent produces after synthesizing fundamental data and market sentiment.
 
-```markdown
+
 # Investment Recommendation
 
 **Ticker:** AAPL  
