@@ -1,94 +1,65 @@
-📈 Autonomous Financial Analyst Agent
+# Autonomous Financial Analyst Agent 📈
 
-An intelligent multi-agent system designed to function as an automated Chief Investment Officer (CIO).
-It performs fundamental financial analysis, evaluates real-time market sentiment, and delivers a clear Buy / Sell / Hold recommendation — all autonomously.
+An intelligent **multi-agent system** that acts as an automated **Chief Investment Officer (CIO)**.
 
-🏗️ Architecture
+Performs **fundamental analysis**, evaluates **real-time market sentiment**, and delivers clear **Buy / Sell / Hold** recommendations — fully autonomously.
 
-The system is built using a StateGraph with a Supervisor–Analyst pattern, ensuring structured, stateful decision-making across multiple agents.
+<br>
 
-🔑 Key Components
-🧭 Supervisor (Router)
+## ✨ Key Features
 
-Orchestrates the workflow
+- Real-time financial data via **yfinance**
+- Live news & sentiment analysis using web search
+- Multi-agent architecture with supervisor routing
+- Transparent, structured reasoning
+- Clear, actionable investment recommendation
+- Modular and easy to extend
 
-Decides whether to:
+<br>
 
-Trigger the Fundamental Analyst
+<br>
 
-Trigger the Sentiment Analyst
+## 🔑 Agents & Responsibilities
 
-Proceed to Final Synthesis
+| Agent                | Purpose                                                                 | Main Data Sources          | Output                              |
+|----------------------|-------------------------------------------------------------------------|----------------------------|-------------------------------------|
+| **Supervisor**       | Orchestrates workflow, decides next step, maintains state              | —                          | Routing decision                    |
+| **Fundamental Analyst** | Analyzes core financial health (P/E, D/E, growth, margins, etc.)     | yfinance                   | Structured financial assessment     |
+| **Sentiment Analyst**   | Gathers latest news, social sentiment, emerging narratives             | DuckDuckGo Search / web    | Bullish / Bearish / Neutral score   |
+| **CIO (Synthesis)**     | Combines quant + qual insights, weighs risks, makes final call         | Outputs from both analysts | Buy / Hold / Sell + detailed reasoning |
 
-Maintains state across the graph
+<br>
 
-📊 Fundamental Analyst
+## 🛠️ Tech Stack
 
-Retrieves real-time financial metrics using yfinance
+| Component       | Purpose                                  |
+|-----------------|------------------------------------------|
+| **LangGraph**   | Stateful multi-agent workflow            |
+| **LangChain**   | Tool integration & LLM chaining          |
+| **OpenAI GPT-4o** | Core reasoning & synthesis             |
+| **yfinance**    | Real-time stock metrics & fundamentals   |
+| **DuckDuckGo Search** | Live news & market sentiment         |
 
-Analyzes:
+<br>
 
-Price-to-Earnings (P/E) Ratio
+## 🚀 How It Works – Flow Summary
 
-Debt-to-Equity Ratio
+1. User provides a stock ticker (e.g. `AAPL`, `TSLA`, `NVDA`)
+2. Supervisor routes work to Fundamental Analyst
+3. Fundamental Analyst pulls & interprets key ratios
+4. Supervisor triggers Sentiment Analyst
+5. Sentiment Analyst scans recent news & public narrative
+6. CIO Agent receives both reports → synthesizes → decides
+7. Final output: **Recommendation + Confidence + Key Reasons + Risks**
 
-Revenue Growth
+<br>
 
-Produces a structured financial health assessment
+## 🎯 Design Goals
 
-📰 Sentiment Analyst
+- **Modular** – easy to add new analysts (technical, macro, options, ESG…)
+- **Transparent** – every agent shows reasoning
+- **Real-time** – leverages fresh market data & news
+- **Actionable** – clear Buy/Hold/Sell + risk context
+- **Stateful** – remembers previous steps & decisions
 
-Uses DuckDuckGoSearchRun to gather:
-
-Latest market news
-
-Public sentiment
-
-Emerging narratives around the ticker
-
-Evaluates overall bullish or bearish tone
-
-🧠 Chief Investment Officer (Synthesis)
-
-Combines:
-
-Quantitative financial data
-
-Qualitative market sentiment
-
-Produces a definitive:
-
-✅ Buy
-⚖️ Hold
-❌ Sell
-
-Includes clear reasoning and risk considerations
-
-🛠️ Tech Stack
-Component	Purpose
-LangGraph	Stateful multi-agent workflow orchestration
-LangChain	Tool integration and LLM coordination
-OpenAI GPT-4o	Core reasoning engine
-yfinance	Real-time financial data retrieval
-DuckDuckGo Search	Live news & sentiment analysis
-🚀 How It Works (Flow Summary)
-
-User inputs a stock ticker
-
-Supervisor routes tasks to analysts
-
-Analysts return structured findings
-
-CIO agent synthesizes insights
-
-Final investment recommendation is generated
-
-🎯 Design Philosophy
-
-Modular & extensible
-
-Transparent reasoning
-
-Real-time data driven
-
-Clear, actionable output
+<br>
