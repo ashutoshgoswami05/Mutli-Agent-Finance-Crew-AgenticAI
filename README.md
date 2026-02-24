@@ -63,3 +63,44 @@ Performs **fundamental analysis**, evaluates **real-time market sentiment**, and
 - **Stateful** – remembers previous steps & decisions
 
 <br>
+
+
+## Sample Output
+
+Below is an example of the kind of clean, structured investment recommendation the Autonomous Financial Analyst Agent produces after synthesizing fundamental data and market sentiment.
+
+```markdown
+# Investment Recommendation
+
+**Ticker:** AAPL  
+**Recommendation:** ⚖️ **Hold**  
+**Confidence:** Moderate  
+**Date:** February 24, 2026
+
+Apple Inc. presents a mixed investment profile with both opportunities and risks.
+
+## Key Strengths
+- **Strong Growth Potential**  
+  High P/E ratio reflects market optimism about future earnings, backed by solid **15.7% revenue growth** — driven by consistent product innovation, services expansion, and ecosystem strength.
+
+## Key Concerns
+- **Elevated Leverage**  
+  Debt-to-Equity ratio of **102.63%** signals meaningful balance sheet debt. While Apple’s exceptional cash flows and market leadership provide a buffer, this level of leverage introduces risk if macro conditions weaken or interest rates remain high.
+
+- **Neutral Technical & Sentiment Picture**  
+  RSI at **46.69** and current neutral market sentiment suggest the stock is neither overbought nor oversold. It is likely to trade sideways until a clear catalyst appears (new product cycle, major services milestone, updated guidance, etc.).
+
+## Final Assessment
+While Apple continues to demonstrate **very strong financial health**, **dominant competitive positioning**, and credible long-term growth drivers, the current combination of a **rich valuation** and **notable leverage** justifies caution.
+
+**Recommended Action:**  
+Maintain existing positions (**Hold**).  
+Wait for either:  
+• Positive catalysts that could justify the premium valuation  
+• A more attractive entry point  
+• A material improvement in the risk/reward profile
+
+Investors with shorter horizons or lower risk tolerance may consider trimming on strength; very long-term holders can reasonably keep current weightings.
+
+---
+*This analysis is for informational and educational purposes only. It is not investment advice.*
