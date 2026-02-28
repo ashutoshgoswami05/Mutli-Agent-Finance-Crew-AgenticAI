@@ -51,7 +51,7 @@ Performs **fundamental analysis**, evaluates **real-time market sentiment**, and
 2. Supervisor routes tasks
 3. **Fundamental Analyst** pulls & interprets key ratios
 4. **Sentiment Analyst** scans recent news & public narrative
-5. **SEC & Earnings Analyst** retrieves relevant sections from latest 10-K/10-Q + most recent earnings call transcript via RAG
+5. **SEC & Earnings Analyst** retrieves most recent earnings call transcript via RAG
 6. Agents return structured findings with sources
 7. **CIO agent** synthesizes quantitative + sentiment + deep qualitative context
 8. Final output: **Recommendation + Confidence + Key Reasons + Risks + Citations**
@@ -71,7 +71,7 @@ Performs **fundamental analysis**, evaluates **real-time market sentiment**, and
 
 ## Sample Output
 
-Below is an example of the kind of clean, structured investment recommendation the Autonomous Financial Analyst Agent produces after synthesizing fundamental data and market sentiment.
+Below is an example of the kind of clear, structured investment recommendation the Autonomous Financial Analyst Agent produces after synthesizing financial metrics, market sentiment, and qualitative insights from SEC filings and recent developments.
 
 
 # Investment Recommendation
@@ -79,32 +79,56 @@ Below is an example of the kind of clean, structured investment recommendation t
 **Ticker:** AAPL  
 **Recommendation:** ⚖️ **Hold**  
 **Confidence:** Moderate  
-**Date:** February 24, 2026
+**Date:** February 28, 2026
 
-Apple Inc. presents a mixed investment profile with both opportunities and risks.
+Apple Inc. continues to exhibit strong underlying business performance, but faces a combination of elevated leverage, regulatory headwinds, and near-term strategic uncertainty.
 
-## Key Strengths
-- **Strong Growth Potential**  
-  High P/E ratio reflects market optimism about future earnings, backed by solid **15.7% revenue growth** — driven by consistent product innovation, services expansion, and ecosystem strength.
+## Key Financial Metrics
 
-## Key Concerns
-- **Elevated Leverage**  
-  Debt-to-Equity ratio of **102.63%** signals meaningful balance sheet debt. While Apple’s exceptional cash flows and market leadership provide a buffer, this level of leverage introduces risk if macro conditions weaken or interest rates remain high.
+- **P/E Ratio:** 33.44  
+  → Investors are willing to pay a premium for AAPL’s earnings, reflecting strong confidence in future growth — particularly in services and AI — but also raising questions about valuation stretch.
 
-- **Neutral Technical & Sentiment Picture**  
-  RSI at **46.69** and current neutral market sentiment suggest the stock is neither overbought nor oversold. It is likely to trade sideways until a clear catalyst appears (new product cycle, major services milestone, updated guidance, etc.).
+- **Debt-to-Equity Ratio:** 102.63%  
+  → Significant leverage increases financial risk, especially in a higher interest rate environment or if consumer spending softens.
+
+- **Revenue Growth:** 15.7%  
+  → Solid expansion continues to support the high valuation, driven by services strength and an enormous active installed base.
+
+## Market Sentiment & Recent Developments
+
+- **Regulatory Pressure**  
+  Ongoing Department of Justice antitrust lawsuit targeting potential opening of iMessage and Apple Pay ecosystems — a material long-term risk to ecosystem control and margins.
+
+- **Stock Price Action**  
+  Recent >10% decline primarily attributed to management changes and investor concerns around AI strategy execution rather than deterioration in core fundamentals.
+
+- **Earnings Outlook**  
+  Upcoming quarterly report carries cautious optimism — investors are particularly focused on AI positioning progress and sustained services revenue momentum.
+
+## Insights from Recent SEC Filings & Statements
+
+- High customer satisfaction scores and continued robust growth in the Services segment  
+- Substantial active device installed base providing long-term revenue stability  
+- Notable tariff-related cost pressures currently weighing on profitability  
+- Overall narrative of operational resilience and product momentum despite external challenges
 
 ## Final Assessment
-While Apple continues to demonstrate **very strong financial health**, **dominant competitive positioning**, and credible long-term growth drivers, the current combination of a **rich valuation** and **notable leverage** justifies caution.
+
+Apple maintains **very strong fundamentals** — impressive revenue growth, profitability, ecosystem lock-in, and services momentum — but is currently offset by:
+
+- Elevated balance sheet leverage  
+- Active antitrust/regulatory scrutiny  
+- Near-term uncertainty around AI execution and leadership transitions
 
 **Recommended Action:**  
-Maintain existing positions (**Hold**).  
-Wait for either:  
-• Positive catalysts that could justify the premium valuation  
-• A more attractive entry point  
-• A material improvement in the risk/reward profile
+**Hold** existing positions.  
+Monitor closely for:  
+• Clarity on antitrust outcomes and potential ecosystem changes  
+• Evidence of successful AI monetization in upcoming earnings  
+• Any signs of deleveraging or margin improvement  
+• Broader market reaction to management strategy updates
 
-Investors with shorter horizons or lower risk tolerance may consider trimming on strength; very long-term holders can reasonably keep current weightings.
+The recent price pullback appears more sentiment-driven than fundamental — creating a possible stabilization or re-rating window if risks are contained.
 
 ---
 *This analysis is for informational and educational purposes only. It is not investment advice.*
